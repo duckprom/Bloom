@@ -1,9 +1,9 @@
-#pragma once 
+#ifndef BLOOM_FILTER_BLOOM_H
+#define BLOOM_FILTER_BLOOM_H
 
+#include "hash.h"
 #include <vector>
 #include <bitset>
-#include "hash.h"
-#include <string>
 
 #define N 1024 * 8
 
@@ -16,6 +16,8 @@ class Bloom
 	public:
 		Bloom(std::vector<Hash>& hashes);
 		
-		void set(std::string obj);
-		bool test(std::string obj);
+		void Set(std::string obj);
+		bool Test(std::string obj);
 };
+
+#endif

@@ -1,4 +1,6 @@
-#pragma once 
+#ifndef BLOOM_FILTER_HASH_H
+#define BLOOM_FILTER_HASH_H
+
 #include <string>
 
 class Hash
@@ -10,3 +12,5 @@ class Hash
 		Hash(int);
 		unsigned int operator ()(std::string obj);
 };
+
+#endif

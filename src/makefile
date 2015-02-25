@@ -1,5 +1,5 @@
 CC = g++
-SOURCES = main.cpp hash.cpp bloom.cpp hashFactory.cpp
+SOURCES = main.cpp hash.cpp bloom.cpp hash_factory.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 
 all: clean main

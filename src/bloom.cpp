@@ -5,7 +5,7 @@ Bloom::Bloom(std::vector<Hash>& hashes)
 	this->hashes = hashes;
 }
 
-void Bloom::set(std::string obj)
+void Bloom::Set(std::string obj)
 {
 	for(int i = 0; i < hashes.size(); i++)
 	{
@@ -13,7 +13,7 @@ void Bloom::set(std::string obj)
 	}
 }
 
-bool Bloom::test(std::string obj)
+bool Bloom::Test(std::string obj)
 {
 	for(int i = 0; i < hashes.size(); i++)
 		if(! bits[ hashes[i](obj) % N ])

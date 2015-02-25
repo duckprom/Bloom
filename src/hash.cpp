@@ -1,6 +1,4 @@
 #include "hash.h"
-#include <stdlib.h>
-#include <iostream>
 
 Hash::Hash(int seed)
 {
